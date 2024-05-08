@@ -14,6 +14,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
 /* ESTILO DE LA BARRA DE NAVEGACION */
@@ -136,7 +137,7 @@ main {
     width: 14rem;
     height: 4.5rem;
     background-color: #fdf7dd;
-    color: red;
+    color: #000;
     border: none;
     border-radius: 5px;
     font-size: 1.8rem;
@@ -335,42 +336,43 @@ main {
 /* Medida vertical */
 @media screen and (min-width: 390px) and (max-width: 844px) {
 /* ------------------------------------ MENU INICIO ------------------------------------ */
+
 .container-right ul li a {
     color: #fff;
     font-size: 11px;
     position: relative;
 }
-    .container-left img {
+.container-left img {
         width: 70px;
         height: 30px;
         background-color: #fff;
-    }
-    .container-right ul .fab {
+}
+.container-right ul .fab {
         font-size: 14px;
         margin-left: 1px;
         cursor: pointer;
-    }
-    .container-info_home h1 {
+}
+.container-info_home h1 {
         font-size: 2.1rem;
         margin-top: 2rem;
-        margin-bottom: 40rem;
+        margin-bottom: 42rem;
         color: #fff;
         background-color: #00000067;
         font-weight: 400;
         line-height: 1.4;
-    }
+}
 
-    .container-info_home button {
+.container-info_home button {
         width: 10rem;
         height: 3.5rem;
         font-size: 1.4rem;
-    }
-
-    .container-info_home .footer {
+}
+    
+.container-info_home .footer {
         margin-top: 1rem;
         font-size: 1.2rem;
-    }
-    }
+}
+}
 
 /* Medida horizontal */
 @media screen and (min-width: 390px) and (max-width: 844px) and (orientation: landscape) {
