@@ -84,8 +84,7 @@ body {
     text-align: center;
     font-size: 52px;
     font-weight: 700;
-    /* color: #FFFFFF; */
-    color: #000;
+    color: #fff;
     margin: 60px 0px 30px 0px;
 }
 .container-title h1:hover {
@@ -100,7 +99,7 @@ body {
     width: 60%;
     margin: 0 auto;
     font-size: 24px;
-    color: #000;
+    color: #fff;
 }
 
 /* IMAGENES E INFO CONTACTO */
@@ -177,27 +176,31 @@ body {
 .container-title_galery h1 {
     text-align: center;
     font-size: 55px;
-    /* color: #FFFFFF; */
-    color: #c77747;
+    color: #fff;
     height: 140px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.gallery__container img {
+/* .gallery__container img {
     width: 100%;
     object-fit: cover;
     height: 100%;
-}
+} */
 .gallery__container {
     width: 90%;
     max-width: 1200px;
     margin: 40px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     grid-auto-rows: 220px;
-    gap: 40px;
+    gap: 20px;
+}
+.gallery__container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* GALERI FIN */
@@ -211,7 +214,6 @@ body {
     width: 90%;
     height: 400px;
     margin: 0 auto;
-    color: #c77747;
 }
 
 .testimonials-header {
@@ -223,6 +225,7 @@ body {
     font-size: 45px;
     z-index: 1;
     background-color: #00000081;
+    color: #fff;
 }
 
 .testimonials-container {
@@ -278,8 +281,8 @@ body {
 /* dispositivo mobile */
 @media screen and (min-width: 390px) and (max-width: 844px) {
     .container-left img {
-        width: 135px;
-        height: 59px;
+        width: 85px;
+        height: 32px;
         margin-left: 5px;
         background-color: #fff;
     }
@@ -292,24 +295,26 @@ body {
         font-size: 12px;
     }
     .container-right ul .fab {
-        font-size: 15px;
+        font-size: 13px;
         margin-left: 1px;
         cursor: pointer;
+    }
+
+    .container-title {
+        width: 100%;
+        height: auto;
     }
     
     .container-title h1 { 
         text-align: center;
         font-size: 29px;
         font-weight: 700;
-        color: #000;
+        color: #c77747;
         margin: 30px 0px 30px 0px;
     }
-    .container-title h1:hover {
-        font-size: 52px;
-        color: #c77747;
-        background-color: #00000084;
-        transition: background-color 0.7s;
-        transition: color 0.9s;
+
+    .container-title .disable {
+        display: none;
     }
     
     .container-title p {
@@ -323,19 +328,19 @@ body {
     /* IMAGENES E INFO CONTACTO */
     
     .contact__container {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
     }
     
     .info__contact-container {
         border: 1px solid #ccc;
-        padding: 10px;
+        padding: 5px;
         text-align: center;
-        width: 100%;
-        background-color: #0000006f;;
+        width: 48%;
+        background-color: #0000006f;
     }
     
     .contact-image {
@@ -344,16 +349,14 @@ body {
         width: 200px;
     }
     .info__contact-container h2 {
-        font-size: 20px;
+        font-size: 17px;
         text-align: center;
         color: #fff;
         font-weight: 400;
         margin: 8px 0px;
     }
     .info__contact-container p {
-        font-size: 15px;
-        text-align: center;
-        color: #fff;
+        display: none;
     }
     /* SECCION INFO */
     
@@ -384,8 +387,13 @@ body {
         margin: 40px auto;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        grid-auto-rows: 200px;
-        gap: 15px;
+        grid-auto-rows: 170px;
+        gap: 20px;
+    }
+    .gallery__container video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     
     /* GALERI FIN */
