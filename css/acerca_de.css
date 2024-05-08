@@ -339,8 +339,9 @@ body {
         border: 1px solid #ccc;
         padding: 5px;
         text-align: center;
-        width: 48%;
+        width: 47%;
         background-color: #0000006f;
+        margin: 0 auto;
     }
     
     .contact-image {
@@ -663,15 +664,8 @@ body {
         text-align: center;
         font-size: 40px;
         font-weight: 700;
-        color: #000;
+        color: #fff;
         margin: 30px 0px 30px 0px;
-    }
-    .container-title h1:hover {
-        font-size: 52px;
-        color: #c77747;
-        background-color: #00000084;
-        transition: background-color 0.7s;
-        transition: color 0.9s;
     }
     
     .container-title p {

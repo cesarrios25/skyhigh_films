@@ -355,7 +355,7 @@ main {
 .container-info_home h1 {
         font-size: 2.1rem;
         margin-top: 2rem;
-        margin-bottom: 42rem;
+        margin-bottom: 43rem;
         color: #fff;
         background-color: #00000067;
         font-weight: 400;
@@ -369,8 +369,8 @@ main {
 }
     
 .container-info_home .footer {
-        margin-top: 1rem;
-        font-size: 1.2rem;
+        margin-top: 0.8rem;
+        font-size: 1.1rem;
 }
 }
 

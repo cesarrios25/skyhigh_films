@@ -329,7 +329,7 @@ button[type="submit"].btn {
     }
     
     .footer-contact {
-        font-size: 14px; /* Reducir el tamaño de fuente */
+        font-size: 12px; /* Reducir el tamaño de fuente */
     }
     
 }
