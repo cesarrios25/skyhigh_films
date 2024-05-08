@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ESTILO DE LA BARRA DE NAVEGACION */
+
+.navbar-principal {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-left img {
+    width: 200px;
+    height: 70px;
+    background-color: #fff;
+}
+
+.container-right {
+    margin-right: 10px;
+}
+
+.container-right ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0; 
+    padding: 0; 
+}
+
+.container-right ul li {
+    margin-right: 15px; 
+}
+
+.container-right ul li:last-child {
+    margin-right: 0; 
+}
+
+.container-right ul li a {
+    color: #fff;
+    font-size: 17px;
+    position: relative;
+}
+
+.container-right ul li a:hover {
+    color: #c77747;
+}
+
+.container-right ul .fab {
+    font-size: 22px;
+    margin-left: 1px;
+    cursor: pointer;
+}
+.container-right ul .fb:hover {
+    color: blue;
+}
+
+.container-right ul .inst:hover {
+    color: red;
+}
+
+/* ESTILO AL MAIN */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container-main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* .container-image_fondo {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/portada-dron.jpeg');
+    background-clip: url('../assets/video-presentacion.mp4');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+} */
+
+.container-image_fondo {
+    width: 100vw; 
+    height: 100vh; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden; 
+}
+.container-image_fondo video {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.container-info_home {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    z-index: 1;
+}
+
+.container-info_home h1 {
+    font-size: 4.2rem;
+    color: #0b0b0b;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+    font-weight: 700;
+}
+
+.container-info_home button {
+    width: 14rem;
+    height: 4.5rem;
+    background-color: #fdf7dd;
+    color: red;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.container-info_home button:hover {
+    background-color: #000;
+    color: #c77747;
+}
+
+.container-info_home .footer {
+    margin-top: 38rem;
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY PARA DISPOSITIVOS TABLET */
+
+/* Medida vertical */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* ------------------------------------ MENU INICIO ------------------------------------ */
+    .container-left img {
+        width: 200px;
+        height: 70px;
+        background-color: #fff;
+    }
+    .container-right ul li a {
+        color: #fff;
+        font-size: 17px;
+        position: relative;
+    }
+    .container-info_home h1 {
+        font-size: 4.2rem;
+        color: #0b0b0b;
+        margin-top: 6rem;
+        margin-bottom: 5rem;
+        font-weight: 700;
+    }
+    .container-info_home button {
+        width: 14rem;
+        height: 4.5rem;
+        background-color: #fdf7dd;
+        color: red;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.8rem;
+        cursor: pointer;
+        transition: background-color 0.5s, color 0.5s;
+    }
+    .container-info_home .footer {
+        margin-top: 50rem;
+        font-size: 1.3rem;
+        color: #fff;
+        font-weight: 400;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1309px) {
+    
+/* ------------------------------------ MENU INICIO ------------------------------------ */
+    .container-info_home h1 {
+        font-size: 4.8rem;
+        color: #0b0b0b;
+        margin-top: 11rem;
+        margin-bottom: 9rem;
+        font-weight: 700;
+    }
+
+    .container-info_home button {
+        width: 18rem;
+        height: 5rem;
+        font-size: 2.1rem;
+    }
+
+    .container-info_home .footer {
+        margin-top: 66rem;
+        font-size: 1.3rem;
+        color: #fff;
+        font-weight: 400;
+    }
+}
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+    .container-left img {
+        width: 147px;
+        height: 60px;
+        background-color: #fff;
+    }
+    .container-right ul li a {
+        color: #fff;
+        font-size: 19px;
+        position: relative;
+    }
+    .container-right ul .fab {
+        font-size: 19px;
+        margin-left: 1px;
+        cursor: pointer;
+    }
+    .container-info_home h1 {
+        font-size: 4.2rem;
+        margin-top: 10rem;
+        margin-bottom: 6rem;
+    }
+    .container-info_home button {
+        width: 14rem;
+        height: 4rem;
+        font-size: 1.8rem;
+    }
+    .container-info_home .footer {
+        margin-top: 67rem;
+        font-size: 1.5rem;
+    }
+}
+
+/* Medida horizontal */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .container-left img {
+        width: 200px;
+        height: 70px;
+        background-color: #fff;
+    }
+    .container-right ul li a {
+        color: #fff;
+        font-size: 17px;
+        position: relative;
+    }
+    .container-info_home h1 {
+        font-size: 4.2rem;
+        color: #0b0b0b;
+        margin-top: 6rem;
+        margin-bottom: 5rem;
+        font-weight: 700;
+    }
+    .container-info_home button {
+        width: 14rem;
+        height: 4.5rem;
+        background-color: #fdf7dd;
+        color: red;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.8rem;
+        cursor: pointer;
+        transition: background-color 0.5s, color 0.5s;
+    }
+    .container-info_home .footer {
+        margin-top: 50rem;
+        font-size: 1.3rem;
+        color: #fff;
+        font-weight: 400;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1309px) and (orientation: landscape) {
+    /* Media Query para hacer el diseño responsivo */
+/* ------------------------------------ MENU INICIO ------------------------------------ */
+    .container-info_home h1 {
+        font-size: 3.8rem;
+        color: #0b0b0b;
+        margin-top: 6rem;
+        margin-bottom: 25rem;
+        font-weight: 700;
+    }
+
+
+    .container-info_home button {
+        width: 14rem; /* Cambiar el ancho del botón en orientación horizontal */
+        height: 4rem; /* Cambiar la altura del botón en orientación horizontal */
+        font-size: 1.7rem; /* Cambiar el tamaño del texto del botón en orientación horizontal */
+    }
+
+    .container-info_home .footer {
+        margin-top: 12rem;
+        font-size: 1.3rem;
+        color: #fff;
+        font-weight: 400;
+    }
+}
+
+
+
+
+/* MEDIA QUERY PARA DISPOSITIVOS MOBILE */
+
+/* Medida vertical */
+@media screen and (min-width: 390px) and (max-width: 844px) {
+/* ------------------------------------ MENU INICIO ------------------------------------ */
+.container-right ul li a {
+    color: #fff;
+    font-size: 11px;
+    position: relative;
+}
+    .container-left img {
+        width: 70px;
+        height: 30px;
+        background-color: #fff;
+    }
+    .container-right ul .fab {
+        font-size: 14px;
+        margin-left: 1px;
+        cursor: pointer;
+    }
+    .container-info_home h1 {
+        font-size: 2.1rem;
+        margin-top: 2rem;
+        margin-bottom: 40rem;
+        color: #fff;
+        background-color: #00000067;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+
+    .container-info_home button {
+        width: 10rem;
+        height: 3.5rem;
+        font-size: 1.4rem;
+    }
+
+    .container-info_home .footer {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+    }
+
+/* Medida horizontal */
+@media screen and (min-width: 390px) and (max-width: 844px) and (orientation: landscape) {
+    /* ------------------------------------ MENU INICIO ------------------------------------ */
+    .container-left img {
+        width: 140px;
+        height: 50px;
+        background-color: #fff;
+    }
+    .container-right ul li a {
+        color: #fff;
+        font-size: 15px;
+        position: relative;
+    }
+    .container-right ul .fab {
+        font-size: 18px;
+        margin-left: 1px;
+        cursor: pointer;
+    }
+    .container-info_home h1 {
+        font-size: 2.7rem;
+        color: #0b0b0b;
+        margin-top: 2rem;
+        margin-bottom: 14rem;
+        font-weight: 400;
+        color: #c77747;
+    }
+    .container-info_home button {
+        width: 12rem;
+        height: 3rem;
+        font-size: 1.4rem;
+    }
+    .container-info_home .footer {
+        margin-top: 1rem;
+        font-size: 1rem;
+        color: #fff;
+        font-weight: 400;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

@@ -1,0 +1,694 @@
+:root {
+    --background: #F8F8FF;
+    --text: #2C2C2C;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size:62.5%;
+    /* overflow: hidden; */
+    scroll-behavior: smooth;
+}
+/* ESTILO DE LA BARRA DE NAVEGACION */
+.navbar-principal {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: #fff;
+}
+
+.container-left img {
+    width: 200px;
+    height: 70px;
+    margin-left: 45px;
+    background-color: #fff;
+}
+
+.container-right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.container-right ul li {
+    margin-right: 30px;
+}
+
+
+.container-right ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+.container-right ul li a:hover {
+    color: #c77747;
+    border-bottom: 0.5px solid #c77747;
+}
+
+.container-right ul .fab {
+    font-size: 22px;
+    margin-left: 1px;
+    cursor: pointer;
+}
+
+.container-right ul .fb:hover {
+    color: blue;
+}
+
+.container-right ul .inst:hover {
+    color: red;
+}
+/* FIN ESTILO BARRA DE NAVEGACION */
+
+body {
+    background-image: url('../assets/portada-dron4.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+.container-title {
+    width: 100%;
+    height: 140px;
+    background-color: #0000008a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.container-title h1 {
+    text-align: center;
+    font-size: 68px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* FORMULARIO */
+
+.container-contact_principal {
+    width: 80%;
+    height: auto;
+    background-color: #0000008a;
+    margin: 0 auto;
+}
+.container-contact_principal h2 {
+    width: 100%;
+    height: 50px;
+    font-size: 4.2rem;
+    text-align: center;
+    margin-bottom: 55px;
+    color: #c77747;
+}
+.info-contact__form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-contact__form h3 {
+    font-size: 23px;
+    margin-right: 12rem;
+    text-align: center;
+    color: #c77747;
+}
+.info-contact__form p {
+    font-size: 16px;
+    margin-right: 12rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.container-form {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.fila {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.campo {
+    width: 80%;
+    height: auto;
+    margin-right: 10px;
+    margin: 0 auto;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 11px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="text"],
+.campo textarea {
+    width: 300px;
+    height: 40px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+}
+
+.campo.centrado {
+    width: 70%;
+    height: 140px;
+    text-align: center;
+    color: #fff;
+}
+.campo textarea {
+    width: 100%;
+    height: 100px;
+    color: #fff;
+}
+
+button[type="submit"].btn {
+    width: 100%;
+    padding: 13px 20px;
+    background-color: #c77747;
+    font-size: 15px;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+::placeholder{
+    color: #ffffff83;
+}
+
+.container-location {
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+}
+.container-location iframe {
+    width: 100%;
+    height:100%
+}
+
+.footer-contact {
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* ORIENTACION VERTICAL */
+
+/* Dispositivo mobile */
+@media screen and (min-width: 390px) and (max-width: 844px) {
+    
+    .container-left img {
+        width: 110px;
+        height: 60px;
+        margin-left: 5px;
+        background-color: #fff;
+    }
+    
+    .container-right ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .container-right ul li {
+        margin-right: 5px;
+    }
+    
+    
+    .container-right ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 13px;
+    }
+    
+    .container-right ul li a:hover {
+        color: #c77747;
+        border-bottom: 0.5px solid #c77747;
+    }
+    
+    .container-right ul .fab {
+        font-size: 13px;
+        margin-left: 1px;
+        cursor: pointer;
+    }
+    
+    .container-right ul .fb:hover {
+        color: blue;
+    }
+    
+    .container-right ul .inst:hover {
+        color: red;
+    }
+
+    .container-title {
+        height: 100px; /* Reducir la altura del contenedor del título */
+        margin: 10px 0; /* Agregar espacio */
+    }
+    
+    .container-title h1 {
+        font-size: 40px; /* Reducir el tamaño del título */
+    }
+    
+    .container-contact_principal {
+        width: 100%; /* Hacer el contenedor de contacto principal del ancho completo */
+    }
+    
+    .container-contact_principal h2 {
+        font-size: 30px; /* Reducir el tamaño del título */
+        margin-bottom: 15px; /* Reducir el espacio inferior */
+    }
+    
+    .info-contact__form {
+        flex-direction: row; /* Cambiar a columna */
+        align-items: center; /* Centrar los elementos */
+    }
+    
+    .info-contact__form h3 {
+        margin-right: 0; /* Eliminar el margen derecho */
+        text-align: center;
+        font-size: 18px;
+    }
+    .info-contact__form p {
+        margin-right: 10px; /* Eliminar el margen derecho */
+        text-align: center; /* Centrar el texto */
+        font-size: 13px;
+    }
+    
+    .container-form {
+        width: 100%; /* Hacer el formulario del ancho completo */
+    }
+    
+    .campo {
+        width: 100%; /* Hacer los campos del ancho completo */
+        margin-bottom: 15px; /* Reducir el espacio inferior */
+        margin-right: 8px;
+    }
+    
+    .campo input[type="text"],
+    .campo input[type="email"],
+    .campo textarea {
+        width: 100%; /* Hacer los campos del ancho completo */
+    }
+    
+    .campo.centrado {
+        text-align: center; /* Centrar el texto */
+        width: 95%;
+    }
+    
+    button[type="submit"].btn {
+        width: 100%;
+    }
+    
+    .container-location {
+        height: 300px; /* Reducir la altura del mapa */
+        width: 90%;
+    }
+    
+    .footer-contact {
+        font-size: 14px; /* Reducir el tamaño de fuente */
+    }
+    
+}
+/* Dispositivo tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    .container-left img {
+        width: 110px;
+        height: 60px;
+        margin-left: 5px;
+        background-color: #fff;
+    }
+    
+    .container-right ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .container-right ul li {
+        margin-right: 5px;
+    }
+    
+    
+    .container-right ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 13px;
+    }
+    
+    .container-right ul li a:hover {
+        color: #c77747;
+        border-bottom: 0.5px solid #c77747;
+    }
+    
+    .container-right ul .fab {
+        font-size: 13px;
+        margin-left: 1px;
+        cursor: pointer;
+    }
+    
+    .container-right ul .fb:hover {
+        color: blue;
+    }
+    
+    .container-right ul .inst:hover {
+        color: red;
+    }
+
+    .container-title {
+        height: 100px; /* Reducir la altura del contenedor del título */
+        margin: 10px 0; /* Agregar espacio */
+    }
+    
+    .container-title h1 {
+        font-size: 40px; /* Reducir el tamaño del título */
+    }
+    
+    .container-contact_principal {
+        width: 100%; /* Hacer el contenedor de contacto principal del ancho completo */
+    }
+    
+    .container-contact_principal h2 {
+        font-size: 30px; /* Reducir el tamaño del título */
+        margin-bottom: 15px; /* Reducir el espacio inferior */
+    }
+    
+    .info-contact__form {
+        flex-direction: row; /* Cambiar a columna */
+        align-items: center; /* Centrar los elementos */
+    }
+    
+    .info-contact__form h3 {
+        margin-right: 0; /* Eliminar el margen derecho */
+        text-align: center;
+        font-size: 18px;
+    }
+    .info-contact__form p {
+        margin-right: 10px; /* Eliminar el margen derecho */
+        text-align: center; /* Centrar el texto */
+        font-size: 13px;
+    }
+    
+    .container-form {
+        width: 100%; /* Hacer el formulario del ancho completo */
+    }
+    
+    .campo {
+        width: 100%; /* Hacer los campos del ancho completo */
+        margin-bottom: 15px; /* Reducir el espacio inferior */
+        margin-right: 8px;
+    }
+    
+    .campo input[type="text"],
+    .campo input[type="email"],
+    .campo textarea {
+        width: 100%; /* Hacer los campos del ancho completo */
+    }
+    
+    .campo.centrado {
+        text-align: center; /* Centrar el texto */
+        width: 95%;
+    }
+    
+    button[type="submit"].btn {
+        width: 100%;
+    }
+    
+    .container-location {
+        height: 300px; /* Reducir la altura del mapa */
+        width: 90%;
+    }
+    
+    .footer-contact {
+        font-size: 14px; /* Reducir el tamaño de fuente */
+    }
+    
+}
+
+/* ORIENTACION HORIONTAL */
+
+/* Dispositivo mobile */
+@media screen and (min-width: 390px) and (max-width: 844px) and (orientation: landscape) {
+    .container-left img {
+        width: 110px;
+        height: 60px;
+        margin-left: 5px;
+        background-color: #fff;
+    }
+    
+    .container-right ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .container-right ul li {
+        margin-right: 5px;
+    }
+    
+    
+    .container-right ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+    }
+    
+    .container-right ul li a:hover {
+        color: #c77747;
+        border-bottom: 0.5px solid #c77747;
+    }
+    
+    .container-right ul .fab {
+        font-size: 16px;
+        margin-left: 1px;
+        cursor: pointer;
+    }
+    
+    .container-right ul .fb:hover {
+        color: blue;
+    }
+    
+    .container-right ul .inst:hover {
+        color: red;
+    }
+
+    .container-title {
+        height: 100px; /* Reducir la altura del contenedor del título */
+        margin: 10px 0; /* Agregar espacio */
+    }
+    
+    .container-title h1 {
+        font-size: 40px; /* Reducir el tamaño del título */
+    }
+    
+    .container-contact_principal {
+        width: 100%; /* Hacer el contenedor de contacto principal del ancho completo */
+    }
+    
+    .container-contact_principal h2 {
+        font-size: 30px; /* Reducir el tamaño del título */
+        margin-bottom: 15px; /* Reducir el espacio inferior */
+    }
+    
+    .info-contact__form {
+        flex-direction: row; /* Cambiar a columna */
+        align-items: center; /* Centrar los elementos */
+    }
+    
+    .info-contact__form h3 {
+        margin-right: 0; /* Eliminar el margen derecho */
+        text-align: center;
+        font-size: 18px;
+    }
+    .info-contact__form p {
+        margin-right: 10px; /* Eliminar el margen derecho */
+        text-align: center; /* Centrar el texto */
+        font-size: 13px;
+    }
+    
+    .container-form {
+        width: 100%; /* Hacer el formulario del ancho completo */
+    }
+    .fila {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .campo {
+        width: 100%; /* Hacer los campos del ancho completo */
+        margin-bottom: 15px; /* Reducir el espacio inferior */
+        margin-right: 8px;
+    }
+    
+    .campo input[type="text"],
+    .campo input[type="email"],
+    .campo textarea {
+        width: 100%; /* Hacer los campos del ancho completo */
+    }
+    
+    .campo.centrado {
+        text-align: center; /* Centrar el texto */
+        width: 95%;
+    }
+    
+    button[type="submit"].btn {
+        width: 100%;
+    }
+    
+    .container-location {
+        height: 300px; /* Reducir la altura del mapa */
+        width: 90%;
+    }
+    
+    .footer-contact {
+        font-size: 14px; /* Reducir el tamaño de fuente */
+    }
+}
+/* Dispositivo tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    .container-left img {
+        width: 140px;
+        height: 60px;
+        margin-left: 5px;
+        background-color: #fff;
+    }
+    
+    .container-right ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .container-right ul li {
+        margin-right: 12px;
+    }
+    
+    
+    .container-right ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    .container-right ul li a:hover {
+        color: #c77747;
+        border-bottom: 0.5px solid #c77747;
+    }
+    
+    .container-right ul .fab {
+        font-size: 13px;
+        margin-left: 1px;
+        cursor: pointer;
+    }
+    
+    .container-right ul .fb:hover {
+        color: blue;
+    }
+    
+    .container-right ul .inst:hover {
+        color: red;
+    }
+
+    .container-title {
+        height: 100px; /* Reducir la altura del contenedor del título */
+        margin: 10px 0; /* Agregar espacio */
+    }
+    
+    .container-title h1 {
+        font-size: 40px; /* Reducir el tamaño del título */
+    }
+    
+    .container-contact_principal {
+        width: 100%; /* Hacer el contenedor de contacto principal del ancho completo */
+    }
+    
+    .container-contact_principal h2 {
+        font-size: 30px; /* Reducir el tamaño del título */
+        margin-bottom: 15px; /* Reducir el espacio inferior */
+    }
+    
+    .info-contact__form {
+        flex-direction: row; /* Cambiar a columna */
+        align-items: center; /* Centrar los elementos */
+    }
+    
+    .info-contact__form h3 {
+        margin-right: 90px;
+        text-align: center;
+        font-size: 22px;
+    }
+    .info-contact__form p {
+        margin-right: 80px;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .container-form {
+        width: 100%; /* Hacer el formulario del ancho completo */
+    }
+    
+    .campo {
+        width: 100%; /* Hacer los campos del ancho completo */
+        margin-bottom: 15px; /* Reducir el espacio inferior */
+        margin-right: 8px;
+    }
+    
+    .campo input[type="text"],
+    .campo input[type="email"],
+    .campo textarea {
+        width: 100%; /* Hacer los campos del ancho completo */
+    }
+    
+    .campo.centrado {
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    button[type="submit"].btn {
+        width: 100%;
+    }
+    
+    .container-location {
+        height: 300px; /* Reducir la altura del mapa */
+        width: 90%;
+    }
+    
+    .footer-contact {
+        font-size: 14px; /* Reducir el tamaño de fuente */
+    }
+    
+}
+
+
+
+
