@@ -11,10 +11,9 @@ html {
 body {
     overflow: hidden;
 }
-
 a {
+    list-style: none;
     text-decoration: none;
-    color: #000;
 }
 
 /* ESTILO DE LA BARRA DE NAVEGACION */
@@ -127,15 +126,16 @@ main {
 
 .container-info_home h1 {
     font-size: 4.2rem;
-    color: #0b0b0b;
+    color: #fff;
     margin-top: 6rem;
-    margin-bottom: 5rem;
-    font-weight: 700;
+    margin-bottom: 43rem;
+    font-weight: 500;
+    background-color: #00000069;
 }
 
 .container-info_home button {
-    width: 14rem;
-    height: 4.5rem;
+    width: 15rem;
+    height: 4.3rem;
     background-color: #fdf7dd;
     color: #000;
     border: none;
@@ -143,15 +143,26 @@ main {
     font-size: 1.8rem;
     cursor: pointer;
     transition: background-color 0.5s, color 0.5s;
+    
+}
+.container-info_home button a {
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+}
+.container-info_home button a:hover {
+    color: #ff96ad;
 }
 
 .container-info_home button:hover {
-    background-color: #000;
-    color: #c77747;
+    border: 1px solid #ff96ad;
+    background-color: #17181c;
+    color: #ff96ad;
+    transition: all 0.5s;
 }
 
 .container-info_home .footer {
-    margin-top: 38rem;
+    margin-top: 1.1rem;
     font-size: 1.3rem;
     color: #fff;
     font-weight: 400;

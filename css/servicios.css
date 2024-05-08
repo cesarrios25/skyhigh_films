@@ -205,9 +205,11 @@ body {
 }
 
 .section-btn button:hover {
-    background-color: #fdf7dd;
-    color: #000;
+    background-color: #17181c;
+    color: #ff96ad;
     border: none;
+    border: 1px solid #ff96ad;
+    transition: all 0.5s;
 }
 
 .footer {

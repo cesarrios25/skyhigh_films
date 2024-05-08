@@ -160,9 +160,11 @@ body {
     font-weight: 400;
 }
 .btn-article:hover {
-    background-color: #ffd2a1; 
-    color: #000;
-    font-weight: 600;
+    background-color: #17181c;
+    color: #ff96ad;
+    border: none;
+    border: 1px solid #ff96ad;
+    transition: all 0.5s;
 }
 /* SECCION INFO */
 
