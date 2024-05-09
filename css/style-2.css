@@ -75,6 +75,7 @@ a {
     color: red;
 }
 
+
 /* ESTILO AL MAIN */
 main {
     display: flex;
@@ -219,61 +220,13 @@ main {
         color: #fff;
         font-weight: 400;
     }
-}
-@media screen and (min-width: 769px) and (max-width: 1309px) {
+    .container-right #menuBtn {
+        display: none; 
+    }
+    .container-right #menuMobile {
+        display: block; 
+    }
     
-/* ------------------------------------ MENU INICIO ------------------------------------ */
-    .container-info_home h1 {
-        font-size: 4.8rem;
-        color: #0b0b0b;
-        margin-top: 11rem;
-        margin-bottom: 9rem;
-        font-weight: 700;
-    }
-
-    .container-info_home button {
-        width: 18rem;
-        height: 5rem;
-        font-size: 2.1rem;
-    }
-
-    .container-info_home .footer {
-        margin-top: 66rem;
-        font-size: 1.3rem;
-        color: #fff;
-        font-weight: 400;
-    }
-}
-@media screen and (min-width: 820px) and (max-width: 1180px) {
-    .container-left img {
-        width: 147px;
-        height: 60px;
-        background-color: #fff;
-    }
-    .container-right ul li a {
-        color: #fff;
-        font-size: 19px;
-        position: relative;
-    }
-    .container-right ul .fab {
-        font-size: 19px;
-        margin-left: 1px;
-        cursor: pointer;
-    }
-    .container-info_home h1 {
-        font-size: 4.2rem;
-        margin-top: 10rem;
-        margin-bottom: 6rem;
-    }
-    .container-info_home button {
-        width: 14rem;
-        height: 4rem;
-        font-size: 1.8rem;
-    }
-    .container-info_home .footer {
-        margin-top: 67rem;
-        font-size: 1.5rem;
-    }
 }
 
 /* Medida horizontal */
@@ -312,30 +265,11 @@ main {
         color: #fff;
         font-weight: 400;
     }
-}
-@media screen and (min-width: 769px) and (max-width: 1309px) and (orientation: landscape) {
-    /* Media Query para hacer el diseño responsivo */
-/* ------------------------------------ MENU INICIO ------------------------------------ */
-    .container-info_home h1 {
-        font-size: 3.8rem;
-        color: #0b0b0b;
-        margin-top: 6rem;
-        margin-bottom: 25rem;
-        font-weight: 700;
+    .menuBtn {
+        display: none; /* Inicialmente oculto en pantallas grandes */
     }
-
-
-    .container-info_home button {
-        width: 14rem; /* Cambiar el ancho del botón en orientación horizontal */
-        height: 4rem; /* Cambiar la altura del botón en orientación horizontal */
-        font-size: 1.7rem; /* Cambiar el tamaño del texto del botón en orientación horizontal */
-    }
-
-    .container-info_home .footer {
-        margin-top: 12rem;
-        font-size: 1.3rem;
-        color: #fff;
-        font-weight: 400;
+    #menuMobile {
+        display: block; /* Ocultar en tabletas y pantallas grandes */
     }
 }
 
@@ -345,7 +279,7 @@ main {
 /* MEDIA QUERY PARA DISPOSITIVOS MOBILE */
 
 /* Medida vertical */
-@media screen and (min-width: 390px) and (max-width: 844px) {
+@media screen and (min-width: 390px) and (max-width: 768px) {
 /* ------------------------------------ MENU INICIO ------------------------------------ */
 
 .container-right ul li a {
@@ -358,11 +292,7 @@ main {
         height: 30px;
         background-color: #fff;
 }
-.container-right ul .fab {
-        font-size: 14px;
-        margin-left: 1px;
-        cursor: pointer;
-}
+
 .container-info_home h1 {
         font-size: 2.1rem;
         margin-top: 2rem;
@@ -383,10 +313,76 @@ main {
         margin-top: 0.8rem;
         font-size: 1.1rem;
 }
+.fas {
+    width: 30px;
+    height: auto;
+}
+
+.menuBtn {
+    display: block; /* Mostrar solo en dispositivos móviles */
+}
+#menuMobile {
+    display: none; /* Ocultar en tabletas y pantallas grandes */
+}
+
+/*  ESTILO AL BOTON MENU HAMBURGUESA */
+#menuMobile {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0; /* Cambiado de "left" a "right" para ubicarlo en el lado derecho */
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    padding-top: 50px;
+    text-align: left; /* Alinea el texto hacia la izquierda */
+}
+/* ESTILO AL BOTON MENU HAMBURGUESA */
+
+
+#menuMobile ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Ajusta la lista como un flex container */
+    flex-direction: column; /* Muestra los elementos en forma de columna */
+}
+
+#menuMobile ul li {
+    margin-bottom: 16px;
+}
+
+#menuMobile ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end; 
+    margin-right: 30px;
+    text-align: center;
+}
+#menuMobile .fab {
+    display: none;
+}
+
+/*  ESTILO AL BOTON CERRA MENU HAMBURGUESA */
+#closeMenuBtn {
+    position: absolute; /* Posiciona el botón de cierre de manera absoluta dentro del menú */
+    top: 10px; /* Ajusta la posición vertical */
+    right: 10px; /* Ajusta la posición horizontal */
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    font-size: 24px; /* Tamaño de fuente */
+    color: #fff; /* Color del texto */
+    cursor: pointer; /* Cursor de puntero */
+    outline: none; /* Quita el contorno al hacer clic */
+}
+
 }
 
 /* Medida horizontal */
-@media screen and (min-width: 390px) and (max-width: 844px) and (orientation: landscape) {
+@media screen and (min-width: 390px) and (max-width: 768px) and (orientation: landscape) {
     /* ------------------------------------ MENU INICIO ------------------------------------ */
     .container-left img {
         width: 140px;
@@ -422,6 +418,63 @@ main {
         color: #fff;
         font-weight: 400;
     }
+    .menuBtn {
+        display: block; /* Mostrar solo en dispositivos móviles */
+    }
+    #menuMobile {
+        display: none; /* Ocultar en tabletas y pantallas grandes */
+    }
+
+    /*  ESTILO AL BOTON MENU HAMBURGUESA */
+#menuMobile {
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido hacia la derecha */
+    position: fixed;
+    top: 0;
+    right: 0; /* Cambiado de "left" a "right" para ubicarlo en el lado derecho */
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    padding-top: 50px;
+    text-align: left; /* Alinea el texto hacia la izquierda */
+}
+/* ESTILO AL BOTON MENU HAMBURGUESA */
+
+
+
+
+#menuMobile ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Ajusta la lista como un flex container */
+    flex-direction: column; /* Muestra los elementos en forma de columna */
+    margin-right: 12px;
+}
+
+#menuMobile ul li {
+    margin-bottom: 16px;
+}
+
+#menuMobile ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/*  ESTILO AL BOTON CERRA MENU HAMBURGUESA */
+#closeMenuBtn {
+    position: absolute; /* Posiciona el botón de cierre de manera absoluta dentro del menú */
+    top: 10px; /* Ajusta la posición vertical */
+    right: 10px; /* Ajusta la posición horizontal */
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    font-size: 24px; /* Tamaño de fuente */
+    color: #fff; /* Color del texto */
+    cursor: pointer; /* Cursor de puntero */
+    outline: none; /* Quita el contorno al hacer clic */
+}
 }
 
 
