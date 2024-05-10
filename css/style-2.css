@@ -174,15 +174,12 @@ main {
 }
 
 
-
-
-
 /*  ---------------------------- MEDIA QUERY ----------------------------  */
 
 /*  DISPOSITIVO MOVIL */
 
 /*  orientacion vertical */
-@media screen and (min-width: 390px) and (max-width: 768px) {
+@media screen and (min-width: 390px) and (max-width: 767px) {
 
     .container-left img {
         width: 120px;
@@ -194,7 +191,7 @@ main {
     .container-info_home h1 {
         font-size: 2.1rem;
         margin-top: 2rem;
-        margin-bottom: 43rem;
+        margin-bottom: 41rem;
         color: #fff;
         background-color: #00000067;
         font-weight: 400;
@@ -207,7 +204,7 @@ main {
     }
         
     .container-info_home .footer {
-        margin-top: 0.8rem;
+        margin-top: 0.7rem;
         font-size: 1.1rem;
     }
 
@@ -266,11 +263,9 @@ main {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 }
-
-
 
 /*  orientacion vertical */
-@media screen and (min-width: 390px) and (max-width: 768px) and (orientation: landscape) {
+@media screen and (min-width: 390px) and (max-width: 767px) and (orientation: landscape) {
 
     .container-left img {
         width: 120px;
@@ -281,8 +276,8 @@ main {
 
     .container-info_home h1 {
         font-size: 2.1rem;
-        margin-top: 2rem;
-        margin-bottom: 10rem;
+        margin-top: 1.5rem;
+        margin-bottom: 9.5rem;
         color: #fff;
         background-color: #00000067;
         font-weight: 400;
@@ -354,6 +349,77 @@ main {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 }
+
+
+/*  DISPOSITIVO TABLET */
+
+/*  orientacion vertical */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    .container-left img {
+        width: 120px;
+        height: 50px;
+        margin-left: 12px;
+        background-color: #fff;
+    }
+
+    .container-info_home h1 {
+        font-size: 3.6rem;
+        margin-top: 4rem;
+        margin-bottom: 66rem;
+        color: #fff;
+        background-color: #00000087;
+        font-weight: 300;
+        line-height: 1.4;
+    }
+    .container-info_home button {
+        width: 10rem;
+        height: 3.5rem;
+        font-size: 1.4rem;
+    }
+        
+    .container-info_home .footer {
+        margin-top: 0.8rem;
+        font-size: 1.1rem;
+    }
+}
+
+/*  orientacion horizontal */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    .container-left img {
+        width: 120px;
+        height: 50px;
+        margin-left: 12px;
+        background-color: #fff;
+    }
+
+    .container-info_home h1 {
+        font-size: 3.6rem;
+        margin-top: 4rem;
+        margin-bottom: 41rem;
+        color: #fff;
+        background-color: #00000087;
+        font-weight: 300;
+        line-height: 1.4;
+    }
+    .container-info_home button {
+        width: 10rem;
+        height: 3.5rem;
+        font-size: 1.4rem;
+    }
+        
+    .container-info_home .footer {
+        margin-top: 0.8rem;
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+
+
 
 
 

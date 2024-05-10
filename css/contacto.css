@@ -223,10 +223,64 @@ button[type="submit"].btn:hover {
 
 
 
-/* ORIENTACION VERTICAL */
+/* DISPOSITIVO MOVIL */
 
-/* Dispositivo mobile */
-@media screen and (min-width: 390px) and (max-width: 844px) {
+/* orientacion vertical */
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* ESTILO AL MENU HAMBURGUESA */
+
+    .container-right .menu {
+        display: none;
+    }
+   
+    .container-right .hamburger-menu {
+        display: block;
+    }
+
+    .container-right.active .menu {
+        display: block;
+        width: 100%;
+        background-color: #000000e3;
+        position: absolute;
+        top: 34px;
+        right: 0px;
+        z-index: 1;
+    }
+
+    .container-right.active .menu li  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px 15px 20px;
+    }
+    .container-right.active .menu li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 12px;
+        transition: 0.4s;
+    }
+
+    
+    .container-right.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .container-right.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .container-right.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
     
     .container-left img {
         width: 85px;
@@ -341,127 +395,62 @@ button[type="submit"].btn:hover {
     }
     
 }
-/* Dispositivo tablet */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    
-    .container-left img {
-        width: 110px;
-        height: 60px;
-        margin-left: 5px;
-        background-color: #fff;
+/* orientacion horizontal */
+@media screen and (min-width: 390px) and (max-width: 767px) and (orientation: landscape) {
+    /* ESTILO AL MENU HAMBURGUESA */
+
+    .container-right .menu {
+        display: none;
     }
-    
-    .container-right ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-    }
-    
-    .container-right ul li {
-        margin-right: 5px;
-    }
-    
-    
-    .container-right ul li a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 13px;
-    }
-    
-    .container-right ul li a:hover {
-        color: #c77747;
-        border-bottom: 0.5px solid #c77747;
-    }
-    
-    .container-right ul .fab {
-        font-size: 13px;
-        margin-left: 1px;
-        cursor: pointer;
-    }
-    
-    .container-right ul .fb:hover {
-        color: blue;
-    }
-    
-    .container-right ul .inst:hover {
-        color: red;
+   
+    .container-right .hamburger-menu {
+        display: block;
     }
 
-    .container-title {
-        height: 100px; /* Reducir la altura del contenedor del título */
-        margin: 10px 0; /* Agregar espacio */
+    .container-right.active .menu {
+        display: block;
+        width: 100%;
+        background-color: #000000e3;
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        z-index: 1;
     }
-    
-    .container-title h1 {
-        font-size: 40px; /* Reducir el tamaño del título */
+
+    .container-right.active .menu li  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px 15px 20px;
     }
-    
-    .container-contact_principal {
-        width: 100%; /* Hacer el contenedor de contacto principal del ancho completo */
-    }
-    
-    .container-contact_principal h2 {
-        font-size: 30px; /* Reducir el tamaño del título */
-        margin-bottom: 15px; /* Reducir el espacio inferior */
-    }
-    
-    .info-contact__form {
-        flex-direction: row; /* Cambiar a columna */
-        align-items: center; /* Centrar los elementos */
-    }
-    
-    .info-contact__form h3 {
-        margin-right: 0; /* Eliminar el margen derecho */
-        text-align: center;
+    .container-right.active .menu li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
         font-size: 18px;
     }
-    .info-contact__form p {
-        margin-right: 10px; /* Eliminar el margen derecho */
-        text-align: center; /* Centrar el texto */
-        font-size: 13px;
-    }
     
-    .container-form {
-        width: 100%; /* Hacer el formulario del ancho completo */
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 12px;
+        transition: 0.4s;
     }
-    
-    .campo {
-        width: 100%; /* Hacer los campos del ancho completo */
-        margin-bottom: 15px; /* Reducir el espacio inferior */
-        margin-right: 8px;
-    }
-    
-    .campo input[type="text"],
-    .campo input[type="email"],
-    .campo textarea {
-        width: 100%; /* Hacer los campos del ancho completo */
-    }
-    
-    .campo.centrado {
-        text-align: center; /* Centrar el texto */
-        width: 95%;
-    }
-    
-    button[type="submit"].btn {
-        width: 100%;
-    }
-    
-    .container-location {
-        height: 300px; /* Reducir la altura del mapa */
-        width: 90%;
-    }
-    
-    .footer-contact {
-        font-size: 14px; /* Reducir el tamaño de fuente */
-    }
-    
-}
 
-/* ORIENTACION HORIONTAL */
+    
+    .container-right.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
 
-/* Dispositivo mobile */
-@media screen and (min-width: 390px) and (max-width: 844px) and (orientation: landscape) {
+    .container-right.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .container-right.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
     .container-left img {
         width: 110px;
         height: 60px;
@@ -579,7 +568,127 @@ button[type="submit"].btn:hover {
         font-size: 14px; /* Reducir el tamaño de fuente */
     }
 }
-/* Dispositivo tablet */
+
+
+/*  DISPOSITIVO TABLET */
+
+/* orientacion vertical */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    .container-left img {
+        width: 110px;
+        height: 60px;
+        margin-left: 5px;
+        background-color: #fff;
+    }
+    
+    .container-right ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .container-right ul li {
+        margin-right: 12px;
+    }
+    
+    
+    .container-right ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    .container-right ul li a:hover {
+        color: #c77747;
+        border-bottom: 0.5px solid #c77747;
+    }
+    
+    .container-right ul .fab {
+        font-size: 13px;
+        margin-left: 1px;
+        cursor: pointer;
+    }
+    
+    .container-right ul .fb:hover {
+        color: blue;
+    }
+    
+    .container-right ul .inst:hover {
+        color: red;
+    }
+
+    .container-title {
+        height: 100px; /* Reducir la altura del contenedor del título */
+        margin: 10px 0; /* Agregar espacio */
+    }
+    
+    .container-title h1 {
+        font-size: 40px; /* Reducir el tamaño del título */
+    }
+    
+    .container-contact_principal {
+        width: 100%; /* Hacer el contenedor de contacto principal del ancho completo */
+    }
+    
+    .container-contact_principal h2 {
+        font-size: 30px; /* Reducir el tamaño del título */
+        margin-bottom: 15px; /* Reducir el espacio inferior */
+    }
+    
+    .info-contact__form {
+        flex-direction: row; /* Cambiar a columna */
+        align-items: center; /* Centrar los elementos */
+    }
+    
+    .info-contact__form h3 {
+        margin-right: 0; /* Eliminar el margen derecho */
+        text-align: center;
+        font-size: 18px;
+    }
+    .info-contact__form p {
+        margin-right: 10px; /* Eliminar el margen derecho */
+        text-align: center; /* Centrar el texto */
+        font-size: 13px;
+    }
+    
+    .container-form {
+        width: 100%; /* Hacer el formulario del ancho completo */
+    }
+    
+    .campo {
+        width: 100%; /* Hacer los campos del ancho completo */
+        margin-bottom: 15px; /* Reducir el espacio inferior */
+        margin-right: 8px;
+    }
+    
+    .campo input[type="text"],
+    .campo input[type="email"],
+    .campo textarea {
+        width: 100%; /* Hacer los campos del ancho completo */
+    }
+    
+    .campo.centrado {
+        text-align: center; /* Centrar el texto */
+        width: 95%;
+    }
+    
+    button[type="submit"].btn {
+        width: 100%;
+    }
+    
+    .container-location {
+        height: 300px; /* Reducir la altura del mapa */
+        width: 90%;
+    }
+    
+    .footer-contact {
+        font-size: 14px; /* Reducir el tamaño de fuente */
+    }
+    
+}
+/* orientacion horizontal */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     
     .container-left img {

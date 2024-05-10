@@ -278,10 +278,67 @@ body {
 
 
 
-/* ORIENTACION VERTICAL */
+/*  ---------------------------- MEDIA QUERY ----------------------------  */
 
-/* dispositivo mobile */
-@media screen and (min-width: 390px) and (max-width: 844px) {
+/*  DISPOSITIVO MOVIL */
+
+/*  orientacion vertical */
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* ESTILO AL MENU HAMBURGUESA */
+
+    .container-right .menu {
+        display: none;
+    }
+   
+    .container-right .hamburger-menu {
+        display: block;
+    }
+
+    .container-right.active .menu {
+        display: block;
+        width: 100%;
+        background-color: #000000e3;
+        position: absolute;
+        top: 34px;
+        right: 0px;
+        z-index: 1;
+    }
+
+    .container-right.active .menu li  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px 15px 20px;
+    }
+    .container-right.active .menu li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 12px;
+        transition: 0.4s;
+    }
+
+    
+    .container-right.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .container-right.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .container-right.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
     .container-left img {
         width: 85px;
         height: 32px;
@@ -462,186 +519,62 @@ body {
         color: #fff;
     }
 }
-/* dispositivo tablet */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .container-left img {
-        width: 135px;
-        height: 59px;
-        margin-left: 5px;
-        background-color: #fff;
+/* orientacion horizontal */
+@media screen and (min-width: 390px) and (max-width: 767px) and (orientation: landscape) {
+    /* ESTILO AL MENU HAMBURGUESA */
+
+    .container-right .menu {
+        display: none;
     }
-    .container-right ul li {
-        margin-right: 5px;
+   
+    .container-right .hamburger-menu {
+        display: block;
     }
-    .container-right ul li a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 16px;
-    }
-    .container-right ul .fab {
-        font-size: 15px;
-        margin-left: 1px;
-        cursor: pointer;
-    }
-    
-    .container-title h1 { 
-        text-align: center;
-        font-size: 29px;
-        font-weight: 700;
-        color: #000;
-        margin: 30px 0px 30px 0px;
-    }
-    .container-title h1:hover {
-        font-size: 52px;
-        color: #c77747;
-        background-color: #00000084;
-        transition: background-color 0.7s;
-        transition: color 0.9s;
-    }
-    
-    .container-title p {
-        width: 90%;
-        margin: 0 auto;
-        font-size: 23px;
-        color: #fff;
-        background-color: #00000084;
-    }
-    
-    /* IMAGENES E INFO CONTACTO */
-    
-    .contact__container {
-        width: 90%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-    }
-    
-    .info__contact-container {
-        border: 1px solid #ccc;
-        padding: 10px;
-        text-align: center;
+
+    .container-right.active .menu {
+        display: block;
         width: 100%;
-        background-color: #0000006f;;
-    }
-    
-    .contact-image {
-        max-width: 100%;
-        height: auto;
-        width: 200px;
-    }
-    .info__contact-container h2 {
-        font-size: 20px;
-        text-align: center;
-        color: #fff;
-        font-weight: 400;
-        margin: 8px 0px;
-    }
-    .info__contact-container p {
-        font-size: 17px;
-        text-align: center;
-        color: #fff;
-    }
-    /* SECCION INFO */
-    
-    /* GALERIA */
-    
-    .container-title_galery {
-        width: 100%;
-        height: 90px;
-        background-color: #00000056;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .container-title_galery h1 {
-        text-align: center;
-        font-size: 33px;
-        color: #c77747;
-        height: 140px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .gallery__container {
-        width: 95%;
-        max-width: 1200px;
-        margin: 20px auto;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        grid-auto-rows: 200px;
-        gap: 15px;
-    }
-    
-    /* GALERI FIN */
-    
-    /* AREA DE TESTIMONIOS */
-    
-    .container-principal-testimonials {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-        height: 280px;
-        margin: 0 auto;
-        color: #c77747;
-    }
-    
-    .testimonials-header {
-        position: sticky;
-        top: 0;
-        padding: 10px 0;
-        width: 100%;
-        text-align: center;
-        font-size: 31px;
+        background-color: #000000e3;
+        position: absolute;
+        top: 34px;
+        right: 0px;
         z-index: 1;
-        background-color: #00000081;
     }
-    
-    .testimonials-container {
+
+    .container-right.active .menu li  {
         display: flex;
-        flex-direction: row;
-        gap: 24px;
-        padding: 16px;
-        width: 100%;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -ms-overflow-style: none; 
-        scrollbar-width: none;  
-        margin-left: 15px;
-    }
-    
-    .testimonials-container::-webkit-scrollbar {
-        display: none;  
-    }
-    
-    .card-testimonials {
-        min-width: 340px;
-        min-height: 200px;
-        color: #ffd2a1;
-        display: flex;
-        border-radius: 16px;
-        transition: all 0.8s;
-        align-items: center;
         justify-content: center;
-        cursor: pointer;
-        scroll-snap-align: start;
-        background-color: #00000056;
+        align-items: center;
+        margin: 20px 0px 15px 20px;
     }
-    .card-testimonials p {
-        font-size: 17px;
-        line-height: 1.4;
-        max-width: 90%;
+    .container-right.active .menu li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: #fff;
+        font-size: 18px;
     }
-}
+    
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 12px;
+        transition: 0.4s;
+    }
 
-/* ORIENTACION HORIZONTAL */
+    
+    .container-right.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
 
-/* Dispositivo mobile */
-@media screen and (min-width: 390px) and (max-width: 844px) and (orientation: landscape) {
+    .container-right.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .container-right.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
     .container-left img {
         width: 135px;
         height: 59px;
@@ -808,7 +741,191 @@ body {
         color: #fff;
     }
 }
-/* dispositivo tablet */
+
+
+
+
+
+
+/* DOSPISITIVO TABLET */
+
+/*  orientacion vertical */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container-left img {
+        width: 135px;
+        height: 59px;
+        margin-left: 5px;
+        background-color: #fff;
+    }
+    .container-right ul li {
+        margin-right: 12px;
+    }
+    .container-right ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+    }
+    .container-right ul .fab {
+        font-size: 15px;
+        margin-left: 1px;
+        cursor: pointer;
+    }
+    
+    .container-title h1 { 
+        text-align: center;
+        font-size: 29px;
+        font-weight: 700;
+        color: #000;
+        margin: 30px 0px 30px 0px;
+    }
+    .container-title h1:hover {
+        font-size: 52px;
+        color: #c77747;
+        background-color: #00000084;
+        transition: background-color 0.7s;
+        transition: color 0.9s;
+    }
+    
+    .container-title p {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 23px;
+        color: #fff;
+        background-color: #00000084;
+    }
+    
+    /* IMAGENES E INFO CONTACTO */
+    
+    .contact__container {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+    
+    .info__contact-container {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        background-color: #0000006f;;
+    }
+    
+    .contact-image {
+        max-width: 100%;
+        height: auto;
+        width: 200px;
+    }
+    .info__contact-container h2 {
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+        font-weight: 400;
+        margin: 8px 0px;
+    }
+    .info__contact-container p {
+        font-size: 17px;
+        text-align: center;
+        color: #fff;
+    }
+    /* SECCION INFO */
+    
+    /* GALERIA */
+    
+    .container-title_galery {
+        width: 100%;
+        height: 90px;
+        background-color: #00000056;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-title_galery h1 {
+        text-align: center;
+        font-size: 33px;
+        color: #c77747;
+        height: 140px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .gallery__container {
+        width: 95%;
+        max-width: 1200px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-auto-rows: 200px;
+        gap: 15px;
+    }
+    
+    /* GALERI FIN */
+    
+    /* AREA DE TESTIMONIOS */
+    
+    .container-principal-testimonials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: 280px;
+        margin: 0 auto;
+        color: #c77747;
+    }
+    
+    .testimonials-header {
+        position: sticky;
+        top: 0;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        font-size: 31px;
+        z-index: 1;
+        background-color: #00000081;
+    }
+    
+    .testimonials-container {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        padding: 16px;
+        width: 100%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -ms-overflow-style: none; 
+        scrollbar-width: none;  
+        margin-left: 15px;
+    }
+    
+    .testimonials-container::-webkit-scrollbar {
+        display: none;  
+    }
+    
+    .card-testimonials {
+        min-width: 340px;
+        min-height: 200px;
+        color: #ffd2a1;
+        display: flex;
+        border-radius: 16px;
+        transition: all 0.8s;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        scroll-snap-align: start;
+        background-color: #00000056;
+    }
+    .card-testimonials p {
+        font-size: 17px;
+        line-height: 1.4;
+        max-width: 90%;
+        color: #fff;
+    }
+}
+
+/* orientacion horizontal */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .container-left img {
         width: 135px;
@@ -817,12 +934,12 @@ body {
         background-color: #fff;
     }
     .container-right ul li {
-        margin-right: 5px;
+        margin-right: 12px;
     }
     .container-right ul li a {
         text-decoration: none;
         color: #fff;
-        font-size: 16px;
+        font-size: 18px;
     }
     .container-right ul .fab {
         font-size: 15px;
