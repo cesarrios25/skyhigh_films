@@ -1,0 +1,85 @@
+/* MEDIA QUERY PARA DISPOSITIVOS TABLET */
+
+/* Medida vertical */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* ------------------------------------ MENU INICIO ------------------------------------ */
+    .container-left img {
+        width: 200px;
+        height: 70px;
+        background-color: #fff;
+    }
+    .container-right ul li a {
+        color: #fff;
+        font-size: 17px;
+        position: relative;
+    }
+    .container-info_home h1 {
+        font-size: 4.2rem;
+        color: #0b0b0b;
+        margin-top: 6rem;
+        margin-bottom: 5rem;
+        font-weight: 700;
+    }
+    .container-info_home button {
+        width: 14rem;
+        height: 4.5rem;
+        background-color: #fdf7dd;
+        color: red;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.8rem;
+        cursor: pointer;
+        transition: background-color 0.5s, color 0.5s;
+    }
+    .container-info_home .footer {
+        margin-top: 50rem;
+        font-size: 1.3rem;
+        color: #fff;
+        font-weight: 400;
+    }
+}
+
+/* Medida horizontal */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .container-left img {
+        width: 200px;
+        height: 70px;
+        background-color: #fff;
+    }
+    .container-right ul li a {
+        color: #fff;
+        font-size: 17px;
+        position: relative;
+    }
+    .container-info_home h1 {
+        font-size: 4.2rem;
+        color: #0b0b0b;
+        margin-top: 6rem;
+        margin-bottom: 5rem;
+        font-weight: 700;
+    }
+    .container-info_home button {
+        width: 14rem;
+        height: 4.5rem;
+        background-color: #fdf7dd;
+        color: red;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.8rem;
+        cursor: pointer;
+        transition: background-color 0.5s, color 0.5s;
+    }
+    .container-info_home .footer {
+        margin-top: 50rem;
+        font-size: 1.3rem;
+        color: #fff;
+        font-weight: 400;
+    }
+    .menuBtn {
+        display: none; /* Inicialmente oculto en pantallas grandes */
+    }
+    #menuMobile .menu {
+        display: block; /* Ocultar en tabletas y pantallas grandes */
+    }
+}
+

@@ -168,132 +168,30 @@ main {
     color: #fff;
     font-weight: 400;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* MEDIA QUERY PARA DISPOSITIVOS TABLET */
-
-/* Medida vertical */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    /* ------------------------------------ MENU INICIO ------------------------------------ */
-    .container-left img {
-        width: 200px;
-        height: 70px;
-        background-color: #fff;
-    }
-    .container-right ul li a {
-        color: #fff;
-        font-size: 17px;
-        position: relative;
-    }
-    .container-info_home h1 {
-        font-size: 4.2rem;
-        color: #0b0b0b;
-        margin-top: 6rem;
-        margin-bottom: 5rem;
-        font-weight: 700;
-    }
-    .container-info_home button {
-        width: 14rem;
-        height: 4.5rem;
-        background-color: #fdf7dd;
-        color: red;
-        border: none;
-        border-radius: 5px;
-        font-size: 1.8rem;
-        cursor: pointer;
-        transition: background-color 0.5s, color 0.5s;
-    }
-    .container-info_home .footer {
-        margin-top: 50rem;
-        font-size: 1.3rem;
-        color: #fff;
-        font-weight: 400;
-    }
-    .container-right #menuBtn {
-        display: none; 
-    }
-    .container-right #menuMobile {
-        display: block; 
-    }
-    
-}
-
-/* Medida horizontal */
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .container-left img {
-        width: 200px;
-        height: 70px;
-        background-color: #fff;
-    }
-    .container-right ul li a {
-        color: #fff;
-        font-size: 17px;
-        position: relative;
-    }
-    .container-info_home h1 {
-        font-size: 4.2rem;
-        color: #0b0b0b;
-        margin-top: 6rem;
-        margin-bottom: 5rem;
-        font-weight: 700;
-    }
-    .container-info_home button {
-        width: 14rem;
-        height: 4.5rem;
-        background-color: #fdf7dd;
-        color: red;
-        border: none;
-        border-radius: 5px;
-        font-size: 1.8rem;
-        cursor: pointer;
-        transition: background-color 0.5s, color 0.5s;
-    }
-    .container-info_home .footer {
-        margin-top: 50rem;
-        font-size: 1.3rem;
-        color: #fff;
-        font-weight: 400;
-    }
-    .menuBtn {
-        display: none; /* Inicialmente oculto en pantallas grandes */
-    }
-    #menuMobile {
-        display: block; /* Ocultar en tabletas y pantallas grandes */
-    }
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
 }
 
 
 
 
-/* MEDIA QUERY PARA DISPOSITIVOS MOBILE */
 
-/* Medida vertical */
+/*  ---------------------------- MEDIA QUERY ----------------------------  */
+
+/*  DISPOSITIVO MOVIL */
+
+/*  orientacion vertical */
 @media screen and (min-width: 390px) and (max-width: 768px) {
-/* ------------------------------------ MENU INICIO ------------------------------------ */
 
-.container-right ul li a {
-    color: #fff;
-    font-size: 11px;
-    position: relative;
-}
-.container-left img {
-        width: 70px;
-        height: 30px;
+    .container-left img {
+        width: 120px;
+        height: 50px;
+        margin-left: 12px;
         background-color: #fff;
-}
+    }
 
-.container-info_home h1 {
+    .container-info_home h1 {
         font-size: 2.1rem;
         margin-top: 2rem;
         margin-bottom: 43rem;
@@ -301,181 +199,170 @@ main {
         background-color: #00000067;
         font-weight: 400;
         line-height: 1.4;
-}
-
-.container-info_home button {
+    }
+    .container-info_home button {
         width: 10rem;
         height: 3.5rem;
         font-size: 1.4rem;
-}
-    
-.container-info_home .footer {
+    }
+        
+    .container-info_home .footer {
         margin-top: 0.8rem;
         font-size: 1.1rem;
-}
-.fas {
-    width: 30px;
-    height: auto;
+    }
+
+    /* ESTILO AL MENU HAMBURGUESA */
+
+    .container-right .menu {
+        display: none;
+    }
+   
+    .container-right .hamburger-menu {
+        display: block;
+    }
+
+    .container-right.active .menu {
+        display: block;
+        width: 100%;
+        background-color: #000000e3;
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        z-index: 1;
+    }
+
+    .container-right.active .menu li  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px 15px 20px;
+    }
+    .container-right.active .menu li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 12px;
+        transition: 0.4s;
+    }
+
+    
+    .container-right.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .container-right.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .container-right.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
 }
 
-.menuBtn {
-    display: block; /* Mostrar solo en dispositivos móviles */
-}
-#menuMobile {
-    display: none; /* Ocultar en tabletas y pantallas grandes */
-}
-
-/*  ESTILO AL BOTON MENU HAMBURGUESA */
-#menuMobile {
-    display: flex;
-    position: fixed;
-    top: 0;
-    right: 0; /* Cambiado de "left" a "right" para ubicarlo en el lado derecho */
-    width: 100%;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 999;
-    padding-top: 50px;
-    text-align: left; /* Alinea el texto hacia la izquierda */
-}
-/* ESTILO AL BOTON MENU HAMBURGUESA */
 
 
-#menuMobile ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex; /* Ajusta la lista como un flex container */
-    flex-direction: column; /* Muestra los elementos en forma de columna */
-}
-
-#menuMobile ul li {
-    margin-bottom: 16px;
-}
-
-#menuMobile ul li a {
-    color: #fff;
-    font-size: 18px;
-    text-decoration: none;
-    display: flex;
-    justify-content: flex-end; 
-    margin-right: 30px;
-    text-align: center;
-}
-#menuMobile .fab {
-    display: none;
-}
-
-/*  ESTILO AL BOTON CERRA MENU HAMBURGUESA */
-#closeMenuBtn {
-    position: absolute; /* Posiciona el botón de cierre de manera absoluta dentro del menú */
-    top: 10px; /* Ajusta la posición vertical */
-    right: 10px; /* Ajusta la posición horizontal */
-    background: none; /* Sin fondo */
-    border: none; /* Sin borde */
-    font-size: 24px; /* Tamaño de fuente */
-    color: #fff; /* Color del texto */
-    cursor: pointer; /* Cursor de puntero */
-    outline: none; /* Quita el contorno al hacer clic */
-}
-
-}
-
-/* Medida horizontal */
+/*  orientacion vertical */
 @media screen and (min-width: 390px) and (max-width: 768px) and (orientation: landscape) {
-    /* ------------------------------------ MENU INICIO ------------------------------------ */
+
     .container-left img {
-        width: 140px;
+        width: 120px;
         height: 50px;
+        margin-left: 12px;
         background-color: #fff;
     }
-    .container-right ul li a {
-        color: #fff;
-        font-size: 15px;
-        position: relative;
-    }
-    .container-right ul .fab {
-        font-size: 18px;
-        margin-left: 1px;
-        cursor: pointer;
-    }
+
     .container-info_home h1 {
-        font-size: 2.7rem;
-        color: #0b0b0b;
+        font-size: 2.1rem;
         margin-top: 2rem;
-        margin-bottom: 14rem;
+        margin-bottom: 10rem;
+        color: #fff;
+        background-color: #00000067;
         font-weight: 400;
-        color: #c77747;
+        line-height: 1.4;
     }
     .container-info_home button {
-        width: 12rem;
-        height: 3rem;
+        width: 10rem;
+        height: 3.5rem;
         font-size: 1.4rem;
     }
+        
     .container-info_home .footer {
-        margin-top: 1rem;
-        font-size: 1rem;
+        margin-top: 0.8rem;
+        font-size: 1.1rem;
+    }
+
+    /* ESTILO AL MENU HAMBURGUESA */
+
+    .container-right .menu {
+        display: none;
+    }
+   
+    .container-right .hamburger-menu {
+        display: block;
+    }
+
+    .container-right.active .menu {
+        display: block;
+        width: 100%;
+        background-color: #000000e3;
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        z-index: 1;
+    }
+
+    .container-right.active .menu li  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px 15px 20px;
+    }
+    .container-right.active .menu li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: #fff;
-        font-weight: 400;
+        font-size: 18px;
     }
-    .menuBtn {
-        display: block; /* Mostrar solo en dispositivos móviles */
+    
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 12px;
+        transition: 0.4s;
     }
-    #menuMobile {
-        display: none; /* Ocultar en tabletas y pantallas grandes */
+
+    
+    .container-right.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
     }
 
-    /*  ESTILO AL BOTON MENU HAMBURGUESA */
-#menuMobile {
-    display: flex;
-    justify-content: flex-end; /* Alinea el contenido hacia la derecha */
-    position: fixed;
-    top: 0;
-    right: 0; /* Cambiado de "left" a "right" para ubicarlo en el lado derecho */
-    width: 100%;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 999;
-    padding-top: 50px;
-    text-align: left; /* Alinea el texto hacia la izquierda */
-}
-/* ESTILO AL BOTON MENU HAMBURGUESA */
+    .container-right.active .bar:nth-child(2) {
+        opacity: 0;
+    }
 
-
-
-
-#menuMobile ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex; /* Ajusta la lista como un flex container */
-    flex-direction: column; /* Muestra los elementos en forma de columna */
-    margin-right: 12px;
+    .container-right.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
 }
 
-#menuMobile ul li {
-    margin-bottom: 16px;
-}
 
-#menuMobile ul li a {
-    color: #fff;
-    font-size: 18px;
-    text-decoration: none;
-}
 
-/*  ESTILO AL BOTON CERRA MENU HAMBURGUESA */
-#closeMenuBtn {
-    position: absolute; /* Posiciona el botón de cierre de manera absoluta dentro del menú */
-    top: 10px; /* Ajusta la posición vertical */
-    right: 10px; /* Ajusta la posición horizontal */
-    background: none; /* Sin fondo */
-    border: none; /* Sin borde */
-    font-size: 24px; /* Tamaño de fuente */
-    color: #fff; /* Color del texto */
-    cursor: pointer; /* Cursor de puntero */
-    outline: none; /* Quita el contorno al hacer clic */
-}
-}
+
+
+
+
+
+
 
 
 
