@@ -171,9 +171,13 @@ main {
     border-radius: 6px;
     border: none;
     background-color: rgba(128, 128, 128, 0.201);
-    color: #fff;
+    color: #000;
     outline: none;
     margin-bottom: 12px;
+    padding-left: 12px;
+}
+.contenedor-input_cuenta input:hover {
+    border: 2px solid #191919;
 }
 ::placeholder {
     padding-left: 8px;
@@ -190,7 +194,10 @@ main {
     outline: none;
     margin: 8px 0px 15px 0px;
     cursor: pointer;
-    font-size: 14px;   
+    font-size: 14px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
 .btn-logIn:hover {
     background-color: #00000022;
@@ -212,4 +219,624 @@ main {
     height: 100%;
     border-radius: 11px;
     object-fit: cover;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+
+
+/*  ---------------------------- MEDIA QUERY ----------------------------  */
+
+/*  DISPOSITIVO MOVIL */
+
+/*  orientacion vertical */
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    
+    /* ESTILO DE LA BARRA DE NAVEGACION */
+    
+    .navbar-principal {
+        background-color: #000000;
+        color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .container-left img {
+        width: 100px;
+        height: 40px;
+        margin-left: 15px;
+    }
+    
+    .container-right {
+        margin-right: 10px;
+    }
+    
+    .container-right ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0; 
+        padding: 0; 
+    }
+    
+    .container-right ul li {
+        margin-right: 15px; 
+    }
+    
+    .container-right ul li:last-child {
+        margin-right: 0; 
+    }
+    
+    .container-right ul li a {
+        color: #fff;
+        font-size: 17px;
+        position: relative;
+    }
+    
+    .container-right ul li a:hover {
+        color: #c77747;
+    }
+    
+    .container-right ul .fab {
+        font-size: 22px;
+        margin-left: 1px;
+        cursor: pointer;
+    }
+    .container-right ul .fb:hover {
+        color: blue;
+    }
+    
+    .container-right ul .inst:hover {
+        color: red;
+    }
+    .container-right .log-in {
+        font-size: 13px;
+    }
+    .container-right .registro {
+        font-size: 13px;
+    }
+
+    /* ESTILO AL MENU HAMBURGUESA */
+
+    .container-right .menu {
+        display: none;
+    }
+   
+    .container-right .hamburger-menu {
+        display: block;
+    }
+
+    .container-right.active .menu {
+        display: block;
+        width: 100%;
+        background-color: #000000e3;
+        position: absolute;
+        top: 34px;
+        right: 0px;
+        z-index: 1;
+    }
+
+    .container-right.active .menu li  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px 15px 20px;
+    }
+    .container-right.active .menu li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 12px;
+        transition: 0.4s;
+    }
+
+    
+    .container-right.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .container-right.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .container-right.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    /*  FIN BARRA DE NAVEGACION  */
+    
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contenedor-logIn {
+        width: 100%;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        border-radius: 17px;
+        border: 1px solid rgba(128, 128, 128, 0.558);
+    }
+    .formulario {
+        width: 100%;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .enable {
+        display: none;
+    }
+}
+
+/*  orientacion vertical */
+@media screen and (min-width: 390px) and (max-width: 767px) and (orientation: landscape) {
+      /* ESTILO DE LA BARRA DE NAVEGACION */
+    
+    .navbar-principal {
+        background-color: #000000;
+        color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .container-left img {
+        width: 100px;
+        height: 45px;
+        margin-left: 12px;
+    }
+    
+    .container-right {
+        margin-right: 10px;
+    }
+    
+    .container-right ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0; 
+        padding: 0; 
+    }
+    
+    .container-right ul li {
+        margin-right: 15px; 
+    }
+    
+    .container-right ul li:last-child {
+        margin-right: 0; 
+    }
+    
+    .container-right ul li a {
+        color: #fff;
+        font-size: 17px;
+        position: relative;
+    }
+    
+    .container-right ul li a:hover {
+        color: #c77747;
+    }
+    
+    .container-right ul .fab {
+        font-size: 22px;
+        margin-left: 1px;
+        cursor: pointer;
+    }
+    .container-right ul .fb:hover {
+        color: blue;
+    }
+    
+    .container-right ul .inst:hover {
+        color: red;
+    }
+    .container-right .log-in {
+        font-size: 13px;
+    }
+    .container-right .registro {
+        font-size: 13px;
+    }
+
+    /* ESTILO AL MENU HAMBURGUESA */
+
+    .container-right .menu {
+        display: none;
+    }
+   
+    .container-right .hamburger-menu {
+        display: block;
+    }
+
+    .container-right.active .menu {
+        display: block;
+        width: 100%;
+        background-color: #000000e3;
+        position: absolute;
+        top: 34px;
+        right: 0px;
+        z-index: 1;
+    }
+
+    .container-right.active .menu li  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px 15px 20px;
+    }
+    .container-right.active .menu li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 12px;
+        transition: 0.4s;
+    }
+
+    
+    .container-right.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .container-right.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .container-right.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    /*  FIN BARRA DE NAVEGACION  */
+    
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contenedor-logIn {
+        width: 100%;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        border-radius: 17px;
+        border: 1px solid rgba(128, 128, 128, 0.558);
+    }
+    .formulario {
+        width: 100%;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .enable {
+        display: none;
+    }
+}
+
+
+
+/*  DISPOSITIVO TABLET */
+
+/*  orientacion vertical */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* ESTILO DE LA BARRA DE NAVEGACION */
+    
+    .navbar-principal {
+        background-color: #000000;
+        color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .container-left img {
+        width: 100px;
+        height: 40px;
+        margin-left: 15px;
+    }
+    
+    .container-right {
+        margin-right: 10px;
+    }
+    
+    .container-right ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0; 
+        padding: 0; 
+    }
+    
+    .container-right ul li {
+        margin-right: 15px; 
+    }
+    
+    .container-right ul li:last-child {
+        margin-right: 0; 
+    }
+    
+    .container-right ul li a {
+        color: #fff;
+        font-size: 17px;
+        position: relative;
+    }
+    
+    .container-right ul li a:hover {
+        color: #c77747;
+    }
+    
+    .container-right ul .fab {
+        font-size: 22px;
+        margin-left: 1px;
+        cursor: pointer;
+    }
+    .container-right ul .fb:hover {
+        color: blue;
+    }
+    
+    .container-right ul .inst:hover {
+        color: red;
+    }
+    .container-right .log-in {
+        font-size: 13px;
+    }
+    .container-right .registro {
+        font-size: 13px;
+    }
+
+    /* ESTILO AL MENU HAMBURGUESA */
+
+    .container-right .menu {
+        display: none;
+    }
+   
+    .container-right .hamburger-menu {
+        display: block;
+    }
+
+    .container-right.active .menu {
+        display: block;
+        width: 100%;
+        background-color: #000000e3;
+        position: absolute;
+        top: 34px;
+        right: 0px;
+        z-index: 1;
+    }
+
+    .container-right.active .menu li  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px 15px 20px;
+    }
+    .container-right.active .menu li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 12px;
+        transition: 0.4s;
+    }
+
+    
+    .container-right.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .container-right.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .container-right.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    /*  FIN BARRA DE NAVEGACION  */
+    
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contenedor-logIn {
+        width: 100%;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        border-radius: 17px;
+        border: 1px solid rgba(128, 128, 128, 0.558);
+    }
+    .formulario {
+        width: 100%;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .enable {
+        display: none;
+    }
+}
+
+/*  orientacion horizontal */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+   /* ESTILO DE LA BARRA DE NAVEGACION */
+    
+   .navbar-principal {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-left img {
+    width: 100px;
+    height: 40px;
+    margin-left: 15px;
+}
+
+.container-right {
+    margin-right: 10px;
+}
+
+.container-right ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0; 
+    padding: 0; 
+}
+
+.container-right ul li {
+    margin-right: 15px; 
+}
+
+.container-right ul li:last-child {
+    margin-right: 0; 
+}
+
+.container-right ul li a {
+    color: #fff;
+    font-size: 17px;
+    position: relative;
+}
+
+.container-right ul li a:hover {
+    color: #c77747;
+}
+
+.container-right ul .fab {
+    font-size: 22px;
+    margin-left: 1px;
+    cursor: pointer;
+}
+.container-right ul .fb:hover {
+    color: blue;
+}
+
+.container-right ul .inst:hover {
+    color: red;
+}
+.container-right .log-in {
+    font-size: 13px;
+}
+.container-right .registro {
+    font-size: 13px;
+}
+
+/* ESTILO AL MENU HAMBURGUESA */
+
+.container-right .menu {
+    display: none;
+}
+
+.container-right .hamburger-menu {
+    display: block;
+}
+
+.container-right.active .menu {
+    display: block;
+    width: 100%;
+    background-color: #000000e3;
+    position: absolute;
+    top: 34px;
+    right: 0px;
+    z-index: 1;
+}
+
+.container-right.active .menu li  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 15px 20px;
+}
+.container-right.active .menu li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 12px;
+    transition: 0.4s;
+}
+
+
+.container-right.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.container-right.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.container-right.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/*  FIN BARRA DE NAVEGACION  */
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+.contenedor-logIn {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    border-radius: 17px;
+    border: 1px solid rgba(128, 128, 128, 0.558);
+}
+.formulario {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.enable {
+    display: none;
+}
 }
