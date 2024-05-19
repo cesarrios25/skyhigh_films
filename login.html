@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title> 
+        <title>Log in</title> 
         <!-- <link rel="stylesheet" href="./css/style.css"> -->
-        <link rel="stylesheet" href="./css/style-2.css">
+        <link rel="stylesheet" href="./css/log-in.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     </head>
     <body>
@@ -37,29 +37,45 @@
             </section>    
         </header>
         
-        
-
-
         <main>
-            <section class="container-main">
-                <div class="container-image_fondo">
-                    <video autoplay loop muted playsinline style="width: 100vw; height: 100vh;">
-                        <source src="./assets/video-presentacion.mp4" type="video/mp4">
-                    </video>
-                </div>
+            <section class="contenedor-logIn">
+                <form action="" class="formulario">
+                    <h1>Bienvedidos &#128079</h1>
+                    <h2>Ingresa con tu cuenta</h2>
 
-                <main>
-            <section class="container-main">
-                <div class="container-image_fondo"></div>
+                    <div class="ingresar-cuentas">
+                        <p><img src="./assets/logo .webp" alt="">Ingresar con Apple</p>
+                        <p><img src="./assets/logo google.png" alt="">Ingresar con Google</p>
+                    </div>
+                    
+                    <div class="opcion-secundaria">
+                        <hr>
+                        <p>O</p>
+                        <hr>
+                    </div>
+
+                    <div class="contenedor-input_cuenta">
+                        <span>Correo Electronico</span>
+                        <input type="text" placeholder="Correo electronico">
+
+                        <span>Contraseña</span>
+                        <input type="text" placeholder="Contraseña">
+                    </div>
+
+                    <button type="submit" class="btn-logIn">Ingresar</button>
+                    <p class="parrafo-final">No puedes ingresar con tu cuenta? <a href="registro.html">Registrate</a></p>
+
+                </form>
+                <div class="contenedor-img">
+                    <img src="./assets/toma-1.jpeg" alt="">
+                </div>
                 
-
-                <div class="container-info_home">
-                    <h1>EL ARTE DE LA FILMACIÓN ELEVADO<br> A LO EXCEPCIONAL <br>EXPERIENCIA PREMIUM CON <br>SKYHIGH FILMS</h1>
-                    <button id="boton-principal" ><a href="./servicios.html">Qué hacemos</a></button>
-                    <p class="footer">ⓒ Creado por SkyHigh Films</p>
-                </div>
+                
             </section>
+            
         </main>
+
+    
 
         <script src="./js/script.js"></script>
 

@@ -66,6 +66,12 @@ html {
 .container-right ul .inst:hover {
     color: red;
 }
+.container-right .log-in {
+    font-size: 13px;
+}
+.container-right .registro {
+    font-size: 13px;
+}
 /* FIN ESTILO BARRA DE NAVEGACION */
 
 /* body {

@@ -74,6 +74,12 @@ a {
 .container-right ul .inst:hover {
     color: red;
 }
+.container-right .log-in {
+    font-size: 13px;
+}
+.container-right .registro {
+    font-size: 13px;
+}
 
 
 /* ESTILO AL MAIN */

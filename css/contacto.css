@@ -66,6 +66,13 @@ html {
 .container-right ul .inst:hover {
     color: red;
 }
+.container-right .log-in {
+    font-size: 13px;
+}
+.container-right .registro {
+    font-size: 13px;
+}
+
 /* FIN ESTILO BARRA DE NAVEGACION */
 
 body {
@@ -165,6 +172,7 @@ body {
     padding: 12px;
     border: 1px solid #ccc;
     background-color: transparent;
+    color: #c77747;
 }
 
 .campo.centrado {
@@ -374,6 +382,7 @@ button[type="submit"].btn:hover {
     .campo input[type="email"],
     .campo textarea {
         width: 100%; /* Hacer los campos del ancho completo */
+        color: #c77747;
     }
     
     .campo.centrado {
@@ -548,6 +557,7 @@ button[type="submit"].btn:hover {
     .campo input[type="email"],
     .campo textarea {
         width: 100%; /* Hacer los campos del ancho completo */
+        color: #c77747;
     }
     
     .campo.centrado {
@@ -667,6 +677,7 @@ button[type="submit"].btn:hover {
     .campo input[type="email"],
     .campo textarea {
         width: 100%; /* Hacer los campos del ancho completo */
+        color: #c77747;
     }
     
     .campo.centrado {
@@ -783,6 +794,7 @@ button[type="submit"].btn:hover {
     .campo input[type="email"],
     .campo textarea {
         width: 100%; /* Hacer los campos del ancho completo */
+        color: #c77747;
     }
     
     .campo.centrado {
