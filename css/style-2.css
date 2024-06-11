@@ -62,25 +62,29 @@ a {
     color: #c77747;
 }
 
-.container-right ul .fab {
-    font-size: 22px;
-    margin-left: 1px;
-    cursor: pointer;
+.container-right .ingreso {
+    display: none;
 }
-.container-right ul .fb:hover {
-    color: blue;
+.container-right .registrer {
+    display: none;
 }
-
-.container-right ul .inst:hover {
-    color: red;
-}
-.container-right .log-in {
-    font-size: 13px;
-}
-.container-right .registro {
-    font-size: 13px;
+.container-right .menu img {
+    width: 35px;
+    margin-right: 15px;
+    filter: invert(100%);
 }
 
+.container-right #cuenta-carrito {
+    background-color: #ee6130;
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    line-height: 20px;
+    aspect-ratio: 1;
+    text-align: center;
+    position: absolute;
+    right: 2px;
+}
 
 /* ESTILO AL MAIN */
 main {
@@ -108,6 +112,36 @@ main {
     left: 0;
     z-index: -1;
 } */
+
+.container-main .row-user {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-main .ingreso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.container-main .registrer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.container-main .ingreso:hover {
+    color: #ff96ad;
+}
+.container-main .registrer:hover {
+    color: #ff96ad;
+}
 
 .container-image_fondo {
     width: 100vw; 
@@ -187,6 +221,9 @@ main {
 /*  orientacion vertical */
 @media screen and (min-width: 390px) and (max-width: 767px) {
 
+    .container-main .row-user {
+        display: none;
+    }
     .container-left img {
         width: 120px;
         height: 50px;

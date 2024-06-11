@@ -53,29 +53,62 @@ html {
     border-bottom: 0.5px solid #c77747;
 }
 
-.container-right ul .fab {
-    font-size: 22px;
-    margin-left: 1px;
-    cursor: pointer;
+.container-right .menu img {
+    width: 35px;
+    margin-right: 15px;
+    filter: invert(100%);
+}
+.container-right .ingreso {
+    display: none;
+}
+.container-right .registrer {
+    display: none;
 }
 
-.container-right ul .fb:hover {
-    color: blue;
-}
-
-.container-right ul .inst:hover {
-    color: red;
-}
-.container-right .log-in {
-    font-size: 13px;
-}
-.container-right .registro {
-    font-size: 13px;
+.container-right #cuenta-carrito {
+    background-color: #ee6130;
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    line-height: 20px;
+    aspect-ratio: 1;
+    text-align: center;
+    position: absolute;
+    right: 35px;
 }
 
 
 
 /* FIN ESTILO BARRA DE NAVEGACION */
+.row-user {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ingreso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.registrer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.ingreso:hover {
+    color: #ff96ad;
+}
+.registrer:hover {
+    color: #ff96ad;
+}
 
 body {
     background-image: url('../assets/paisaje-dron.jpeg');
