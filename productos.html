@@ -5,8 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title> 
         <!-- <link rel="stylesheet" href="./css/style.css"> -->
-        <link rel="stylesheet" href="./css/productos.css">
+        <!-- <link rel="stylesheet" href="./css/productos.css"> -->
         <link rel="stylesheet" href="./css/producto2.css">
+        <link rel="stylesheet" href="./css/cart.css">
          
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     </head>
@@ -27,8 +28,8 @@
                         <li><a href="productos.html">Productos</a></li>
                         <li><a href="./login.html" id="ingreso" class="log-in ingreso">Log in</a></li>
                         <li><a href="./registro.html" id="registrer" class="registro registrer">Registro</a></li>
-                        <li><a href=""><img src="./assets/carrito-de-compras.png" alt="" class="cart-icon"><span id="cuenta-carrito">0</span></a></li>
-                        <!-- <li class="cart-icon"><a href="carrito.html"><span>🛒 </span></a></li> -->
+                        <li><a href="./cart.html"><img src="./assets/carrito-de-compras.png" alt="" class="cart-icon"><span id="cuenta-carrito">0</span></a></li>
+                        
                     </ul>
         
                     <div class="hamburger-menu" id="hamburger-menu">
@@ -40,7 +41,7 @@
             </section>    
         </header>
         
-        <main>
+        <!-- <main>
             <section class="product-grid">
                 <div class="product">
                     <img src="./assets/productos-drones/1.jpg" alt="Producto 1">
@@ -114,12 +115,18 @@
                     <a href="#" class="add-to-cart" data-id="9">Agregar a la bolsa</a>
                 </div>
             </section>
+        </main> -->
+
+        
+        <main>
+            <section id="productos-container"></section>
         </main>
 
-    
+
         <!-- <script src="./js/script.js"></script> -->
         <script src="./js/drones.js"></script>
         <script src="./js/script.js" defer></script>
+        <script src="./js/cartServices.js" defer></script>
 
 
     </body>

@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* ESTILO DE LA BARRA DE NAVEGACION */
+
+.navbar-principal {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-left img {
+    width: 200px;
+    height: 70px;
+    background-color: #fff;
+}
+
+.container-right {
+    margin-right: 10px;
+}
+
+.container-right ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0; 
+    padding: 0; 
+}
+
+.container-right ul li {
+    margin-right: 15px; 
+}
+
+.container-right ul li:last-child {
+    margin-right: 0; 
+}
+
+.container-right ul li a {
+    color: #fff;
+    font-size: 17px;
+    position: relative;
+}
+
+.container-right ul li a:hover {
+    color: #c77747;
+}
+
+.container-right .ingreso {
+    display: none;
+}
+
+.container-right .registrer {
+    display: none;
+}
+
+.container-right .menu img {
+    width: 35px;
+    margin-right: 15px;
+    filter: invert(100%);
+}
+
+.container-right #cuenta-carrito {
+    background-color: #ee6130;
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    line-height: 20px;
+    aspect-ratio: 1;
+    text-align: center;
+    position: absolute;
+    right: 2px;
+}
+
+/*  FIN BARRA DE NAVEGACION */
+
+header {
+    margin-bottom: 20px;
+}
+
+.escondido {
+    display: none;
+}

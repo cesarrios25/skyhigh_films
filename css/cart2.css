@@ -1,0 +1,58 @@
+#productos-container {
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+}
+.tarjeta-producto {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.tarjeta-producto img {
+    height: 100px;
+    aspect-ratio: 1.5;
+    margin-bottom: 22px;
+}
+.tarjeta-producto h3 {
+    width: 180px;
+    font-size: 17px;
+    text-align: center;
+}
+.tarjeta-producto p {
+    font-size: 15px;
+}
+#totales, #carrito-vacio {
+    text-align: center;
+}
+#totales p {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+.btn {
+    background-color: #c77747;
+    color: #000;
+    padding: 5px 10px;
+    border: unset;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    font-size: 14px;
+    margin: 5px 8px 0 0;
+}
+button {
+    background-color: #c77747;
+    color: #000;
+    padding: 6px 10px;
+    border: unset;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cantidad {
+    font-size: 14px;
+    margin: 0 8px;
+}
+main #carrito-vacio {
+    font-size: 18px;
+}

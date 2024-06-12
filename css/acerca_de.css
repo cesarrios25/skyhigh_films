@@ -78,7 +78,6 @@ html {
 }
 
 
-
 /* FIN ESTILO BARRA DE NAVEGACION */
 .row-user {
     display: flex;
@@ -146,7 +145,7 @@ body {
 
 /* IMAGENES E INFO CONTACTO */
 
-.contact__container {
+/* .contact__container {
     width: 90%;
     margin: 0 auto;
     display: grid;
@@ -179,7 +178,7 @@ body {
     font-size: 17px;
     text-align: center;
     color: #fff;
-}
+} */
 .container-btn_article {
     width: 100%;
     height: 130px;
@@ -245,6 +244,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 /* GALERI FIN */

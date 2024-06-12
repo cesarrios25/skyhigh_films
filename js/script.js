@@ -84,15 +84,15 @@ function crearTarjetasProductosInicio(productos) {
         const nuevoDron = document.createElement('div');
         nuevoDron.classList = "tarjeta-producto";
         nuevoDron.innerHTML = `
-        <img src="../assets/productos-drones/${producto.id}.jpg">
+        <img src="./assets/productos-drones/${producto.id}.jpg">
         <h3>${producto.nombre}</h3>
-        <p>$ ${producto.precio}</p>
+        <p>${producto.descripcion}</p>
+        <span>us ${producto.precio}</span>
         <button>Agregar al carrito</button>
         `
         contenedorTarjetas.appendChild(nuevoDron);
-
+        nuevoDron.getElementsByTagName('button')[0].addEventListener('click',() => agregarAlCarrito(producto))
     });
 }
 
 crearTarjetasProductosInicio(drones)
-console.log(`../assets/productos-drones/${producto.id}.jpg`);
