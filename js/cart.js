@@ -8,6 +8,7 @@ const reiniciarCarritoElement = document.getElementById('reiniciar')
 
 function crearTarjetasProductosInicio() {
     contenedorTarjetas.innerHTML = "";
+// Recupera un ítem almacenado en el localStorage y convierte el ítem recuperado de JSON a un objeto JavaScript. 
     const productos = JSON.parse(localStorage.getItem('drones'));
     console.log(productos)
     if(productos && productos.length > 0) {

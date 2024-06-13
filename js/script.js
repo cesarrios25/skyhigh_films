@@ -50,31 +50,6 @@ function Ingreso(form) {
 }
 
 
-let registros = {}; // En este objeto vacio almacenamos los registros que vamos a ingresar.
-
-function almacenarRegistro() {
-// Datos que ingresemos al formulario.
-    const correo = document.getElementById('correo').value;
-    const contraseña = document.getElementById('contraseña').value;
-    const repetirContraseña = document.getElementById('repcontraseña').value;
-
-// Si alguno de estos campos del formulario esta sin llenar, me da el alert.
-    if (!correo || !contraseña || !repetirContraseña) {
-        alert('Faltan campos por ingresar.');
-        return;
-    }
-
-// los campos ingresados son guardados en registros.
-    registros[nombre] = { correo, contraseña, repetirContraseña};
-
-    document.getElementById('formulario').reset(); // Deja el formulario vacio para nuevos campos.
-    location = 'index.html'; 
-
-alert('Registro exitoso.');
-console.log()
-}
-
-
 // -------------------- CODIGO JS PARA CARRITO DE COMPRAS.
 
 const contenedorTarjetas = document.getElementById('productos-container')

@@ -1,3 +1,4 @@
+// arreglo de objetos.
 const drones = [
     {
         id: 1,

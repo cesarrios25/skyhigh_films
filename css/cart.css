@@ -8,9 +8,9 @@
 .tarjeta-producto {
     max-width: 400px;
     text-align: center;
-    background-color: rgba(128, 128, 128, 0.31);
+    background-color: rgba(128, 128, 128, 0.158);
     padding: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.222);
     transition: 200ms;
     margin-bottom: 20px;
     cursor: pointer;

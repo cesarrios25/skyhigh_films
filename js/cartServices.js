@@ -1,3 +1,4 @@
+// funcion para agregar al carrito
 function agregarAlCarrito(producto) {
     const memoria = JSON.parse(localStorage.getItem('drones'));
     console.log(memoria);
@@ -36,7 +37,6 @@ function restarAlCarrito(producto) {
 }
 
 // toma un producto y agrega cantidad 1 y lo devuelve
-
 function getNuevoProductoParaMemoria(producto) {
     const nuevoproducto = producto;
     nuevoproducto.cantidad = 1;
