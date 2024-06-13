@@ -99,3 +99,163 @@ header {
 .escondido {
     display: none;
 }
+
+
+
+/*  ---------------------------- MEDIA QUERY ----------------------------  */
+
+/*  DISPOSITIVO MOVIL */
+
+/*  orientacion vertical */
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    
+    /* ESTILO AL MENU HAMBURGUESA */
+    .container-left img {
+        width: 127px;
+        height: 45px;
+        background-color: #fff;
+        margin-left: 12px;
+    }
+
+    .container-right .menu {
+        display: none;
+    }
+   
+    .container-right .hamburger-menu {
+        display: block;
+    }
+
+    .container-right.active .menu {
+        display: block;
+        width: 100%;
+        background-color: #000000e3;
+        position: absolute;
+        top: 45px;
+        right: 0px;
+        z-index: 1;
+    }
+
+    .container-right.active .menu li  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px 15px 20px;
+    }
+    .container-right.active .menu li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 12px;
+        transition: 0.4s;
+    }
+
+    
+    .container-right.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .container-right.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .container-right.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    .container-right .menu img {
+        width: 30px;
+        margin-right: 15px;
+        filter: invert(100%);
+    }
+    .container-right #cuenta-carrito {
+        background-color: #ee6130;
+        border-radius: 100%;
+        display: inline-block;
+        width: 17px;
+        line-height: 18px;
+        aspect-ratio: 1;
+        text-align: center;
+        position: absolute;
+        right: 2px;
+    }
+    
+    /*  FIN BARRA DE NAVEGACION */
+    
+    header {
+        margin-bottom: 20px;
+    }
+    
+    .escondido {
+        display: none;
+    }
+
+    #productos-container {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        margin: 0 auto;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 80%;
+    }
+    .tarjeta-producto {
+        min-width: 320px;
+        text-align: center;
+        background-color: rgba(128, 128, 128, 0.158);
+        padding: 10px;
+        /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.222); */
+        /* transition: 200ms; */
+        margin-bottom: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .tarjeta-producto img {
+        width: 100%;
+        /* aspect-ratio: 2.5; */
+        height: auto;
+        margin-bottom: 0px;
+    }
+    .tarjeta-producto h3 {
+        font-size: 20px;
+        padding: 3px;
+        width: 100%;
+        height: 33px;
+        margin: 13px;
+        text-align: center;
+    }
+    .tarjeta-producto p {
+        font-size: 15px;
+        margin-bottom: 7px;
+        font-weight: bold;
+        color: #808080b8;
+    }
+    .tarjeta-producto span {
+        font-size: 22px;
+        margin-bottom: 6px;
+        font-weight: bold;
+        /* text-align: center; */
+    }
+    button {
+        background-color: #c77747;
+        color: #000;
+        padding: 5px 10px;
+        border: unset;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 146px;
+        height: 30px;
+        font-size: 16px;
+        /* margin-top: -3px; */
+    }
+
+
+}
